@@ -1,0 +1,8 @@
+{
+  "appId": "com.study.securityplus701",
+  "appName": "SecurityPlus701Study",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}
