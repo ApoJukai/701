@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "domain": "Mixed Review",
+    "question": "A company implements a Zero Trust model to secure its infrastructure. What is the core principle of this model?",
+    "options": [
+      "Implicit trust within the internal network",
+      "Continuous authentication and least privilege",
+      "Network segmentation with firewalls",
+      "Encrypting all data stored on-premises"
+    ],
+    "answerIndex": 1,
+    "explanation": "Zero Trust means never trust, always verify: continuous authentication, authorization, monitoring, and least privilege."
+  },
+  {
+    "id": 2,
+    "domain": "Mixed Review",
+    "question": "An attacker exploits a weak API endpoint to access sensitive customer data. What is the best defense against such attacks?",
+    "options": [
+      "Encrypt all API communications",
+      "Require multi-factor authentication for API users",
+      "Use input validation and rate limiting",
+      "Deploy endpoint protection on developer systems"
+    ],
+    "answerIndex": 2,
+    "explanation": "APIs should validate input, enforce authorization, and apply rate limiting to reduce abuse of weak endpoints."
+  },
+  {
+    "id": 3,
+    "domain": "Mixed Review",
+    "question": "What is the primary purpose of a Business Impact Analysis (BIA)?",
+    "options": [
+      "Ensure compliance with regulatory frameworks",
+      "Identify critical business functions and assess the impact of disruptions",
+      "Detect insider threats through behavior monitoring",
+      "Analyze vulnerabilities in legacy systems"
+    ],
+    "answerIndex": 1,
+    "explanation": "A BIA identifies critical functions and determines disruption impact, including recovery objectives like RTO/RPO."
+  },
+  {
+    "id": 4,
+    "domain": "Mixed Review",
+    "question": "A company experiences a ransomware attack. The attackers demand payment to decrypt critical files. What should the incident response team prioritize?",
+    "options": [
+      "Notify law enforcement and preserve evidence",
+      "Pay the ransom to restore operations quickly",
+      "Isolate affected systems and restore from backups",
+      "Disable all network traffic to contain the attack"
+    ],
+    "answerIndex": 2,
+    "explanation": "Immediate priorities are containment and recovery: isolate infected systems and restore from known-good backups."
+  },
+  {
+    "id": 5,
+    "domain": "Mixed Review",
+    "question": "Which cryptographic technique ensures the integrity of a transmitted file?",
+    "options": [
+      "Encryption",
+      "Hashing",
+      "Tokenization",
+      "Salting"
+    ],
+    "answerIndex": 1,
+    "explanation": "Hashing produces a digest that changes if the file changes, supporting integrity verification."
+  },
+  {
+    "id": 6,
+    "domain": "Mixed Review",
+    "question": "An attacker sends phishing emails targeting executives of an organization. What is this attack called?",
+    "options": [
+      "Spear phishing",
+      "Whaling",
+      "Vishing",
+      "Smishing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Whaling is phishing that targets senior executives or high-value leaders."
+  },
+  {
+    "id": 7,
+    "domain": "Mixed Review",
+    "question": "Which of the following is a primary function of a Security Information and Event Management (SIEM) system?",
+    "options": [
+      "Encrypt sensitive files in real-time",
+      "Analyze and correlate security events across the network",
+      "Automatically patch vulnerable systems",
+      "Deploy firewalls and intrusion prevention systems"
+    ],
+    "answerIndex": 1,
+    "explanation": "A SIEM aggregates, analyzes, and correlates logs/events to identify security incidents."
+  },
+  {
+    "id": 8,
+    "domain": "Mixed Review",
+    "question": "What is the best method to secure data stored in a misconfigured cloud storage bucket?",
+    "options": [
+      "Restrict public access and implement identity-based permissions",
+      "Encrypt all files with RSA",
+      "Configure logging to monitor access attempts",
+      "Deploy an intrusion detection system (IDS)"
+    ],
+    "answerIndex": 0,
+    "explanation": "The most direct remediation is to remove public access and enforce least-privilege identity-based permissions."
+  },
+  {
+    "id": 9,
+    "domain": "Mixed Review",
+    "question": "An attacker intercepts and modifies communication between two devices. What is this attack called?",
+    "options": [
+      "Replay attack",
+      "Man-in-the-middle (MITM)",
+      "ARP poisoning",
+      "Session hijacking"
+    ],
+    "answerIndex": 1,
+    "explanation": "MITM/on-path attacks intercept and may alter communications between parties."
+  },
+  {
+    "id": 10,
+    "domain": "Mixed Review",
+    "question": "Which of the following tools is used to analyze network traffic for suspicious activity?",
+    "options": [
+      "Wireshark",
+      "Nessus",
+      "Splunk",
+      "Metasploit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Wireshark is a packet analyzer used to inspect network traffic."
+  },
+  {
+    "id": 11,
+    "domain": "Mixed Review",
+    "question": "What is the best defense against credential stuffing attacks?",
+    "options": [
+      "Enforce complex password policies",
+      "Deploy account lockout mechanisms and multi-factor authentication",
+      "Monitor network traffic for anomalies",
+      "Require password rotation every 90 days"
+    ],
+    "answerIndex": 1,
+    "explanation": "Credential stuffing uses reused stolen credentials; MFA and lockout/rate limiting reduce success."
+  },
+  {
+    "id": 12,
+    "domain": "Mixed Review",
+    "question": "An organization notices a significant increase in outbound traffic to an unfamiliar IP address. What is the most likely explanation?",
+    "options": [
+      "Brute force attack",
+      "Data exfiltration via a compromised system",
+      "Network misconfiguration",
+      "Malware scanning the internal network"
+    ],
+    "answerIndex": 1,
+    "explanation": "Unusual outbound traffic to unknown destinations can indicate data exfiltration."
+  },
+  {
+    "id": 13,
+    "domain": "Mixed Review",
+    "question": "Which of the following is a key feature of WPA3 for wireless networks?",
+    "options": [
+      "Secure Key Exchange (KRACK prevention)",
+      "Advanced Encryption Standard (AES)",
+      "Opportunistic Wireless Encryption (OWE)",
+      "Perfect Forward Secrecy"
+    ],
+    "answerIndex": 2,
+    "explanation": "OWE is associated with enhanced open Wi\u2011Fi protection; WPA3 also uses stronger authentication/key exchange."
+  },
+  {
+    "id": 14,
+    "domain": "Mixed Review",
+    "question": "What is the primary purpose of using a honeypot in a network?",
+    "options": [
+      "Divert attackers and gather intelligence",
+      "Encrypt sensitive data stored on the server",
+      "Prevent denial-of-service attacks",
+      "Detect and block phishing emails"
+    ],
+    "answerIndex": 0,
+    "explanation": "A honeypot is a decoy system used to lure attackers and observe their tactics."
+  },
+  {
+    "id": 15,
+    "domain": "Mixed Review",
+    "question": "What is the best way to prevent SQL injection attacks?",
+    "options": [
+      "Use parameterized queries and input validation",
+      "Encrypt all sensitive database records",
+      "Deploy a web application firewall (WAF)",
+      "Implement multi-factor authentication"
+    ],
+    "answerIndex": 0,
+    "explanation": "Parameterized queries prevent input from being interpreted as SQL code."
+  },
+  {
+    "id": 16,
+    "domain": "Mixed Review",
+    "question": "An attacker exploits a buffer overflow vulnerability in an application. What is the likely goal?",
+    "options": [
+      "Gain administrative access to the server",
+      "Execute arbitrary code",
+      "Steal user credentials",
+      "Modify sensitive data"
+    ],
+    "answerIndex": 1,
+    "explanation": "Buffer overflows are often exploited to execute arbitrary code or crash an application."
+  },
+  {
+    "id": 17,
+    "domain": "Mixed Review",
+    "question": "Which regulatory framework governs the protection of payment card data?",
+    "options": [
+      "HIPAA",
+      "PCI DSS",
+      "GDPR",
+      "ISO 27001"
+    ],
+    "answerIndex": 1,
+    "explanation": "PCI DSS governs cardholder/payment card data protection."
+  },
+  {
+    "id": 18,
+    "domain": "Mixed Review",
+    "question": "What is the primary purpose of network segmentation?",
+    "options": [
+      "Limit the spread of malware within the network",
+      "Encrypt sensitive communications",
+      "Improve network performance",
+      "Monitor all inbound and outbound traffic"
+    ],
+    "answerIndex": 0,
+    "explanation": "Segmentation limits lateral movement and contains compromise."
+  },
+  {
+    "id": 19,
+    "domain": "Mixed Review",
+    "question": "Which of the following controls is an example of a compensating control?",
+    "options": [
+      "Using a bastion host to access internal servers",
+      "Encrypting sensitive data in transit",
+      "Deploying a SIEM to correlate security events",
+      "Implementing multi-factor authentication for privileged accounts"
+    ],
+    "answerIndex": 0,
+    "explanation": "A compensating control is an alternate control when the preferred control is not feasible; a bastion host can provide controlled access when direct access is restricted."
+  },
+  {
+    "id": 20,
+    "domain": "Mixed Review",
+    "question": "An attacker exploits a web application vulnerability to steal session tokens. What is the best way to mitigate this risk?",
+    "options": [
+      "Encrypt session tokens using HTTPS",
+      "Use input validation to sanitize user data",
+      "Implement secure cookie attributes and session timeouts",
+      "Deploy a firewall to block malicious traffic"
+    ],
+    "answerIndex": 2,
+    "explanation": "HttpOnly/Secure/SameSite cookie attributes and session expiration reduce token theft/abuse."
+  },
+  {
+    "id": 21,
+    "domain": "Mixed Review",
+    "question": "A network administrator discovers multiple failed login attempts on a critical server from different geographic locations. What is the most likely type of attack?",
+    "options": [
+      "Credential stuffing",
+      "Password spraying",
+      "Brute force",
+      "Replay attack"
+    ],
+    "answerIndex": 2,
+    "explanation": "Repeated failed attempts against a server commonly indicate brute-force guessing."
+  },
+  {
+    "id": 22,
+    "domain": "Mixed Review",
+    "question": "What is the primary benefit of implementing network access control (NAC) in an organization?",
+    "options": [
+      "Encrypt data in transit across the network",
+      "Prevent unauthorized devices from connecting to the network",
+      "Monitor user activity in real-time",
+      "Ensure compliance with data privacy laws"
+    ],
+    "answerIndex": 1,
+    "explanation": "NAC evaluates and controls device access to the network."
+  },
+  {
+    "id": 23,
+    "domain": "Mixed Review",
+    "question": "An attacker exploits an unpatched operating system to execute a remote code attack. What is the best remediation strategy?",
+    "options": [
+      "Conduct real-time monitoring of system logs",
+      "Enforce strict password policies",
+      "Implement regular patch management processes",
+      "Deploy endpoint detection and response (EDR) solutions"
+    ],
+    "answerIndex": 2,
+    "explanation": "Patch management remediates known OS vulnerabilities."
+  },
+  {
+    "id": 24,
+    "domain": "Mixed Review",
+    "question": "What is the main purpose of a certificate revocation list (CRL) in PKI?",
+    "options": [
+      "Provide encryption for sensitive communications",
+      "Validate digital signatures",
+      "Identify and revoke invalid or compromised certificates",
+      "Authenticate public and private keys"
+    ],
+    "answerIndex": 2,
+    "explanation": "A CRL lists certificates that should no longer be trusted."
+  },
+  {
+    "id": 25,
+    "domain": "Mixed Review",
+    "question": "Which of the following attacks targets Bluetooth-enabled devices to gain unauthorized access?",
+    "options": [
+      "Bluesnarfing",
+      "Bluejacking",
+      "Rogue AP",
+      "Evil twin"
+    ],
+    "answerIndex": 0,
+    "explanation": "Bluesnarfing steals data from Bluetooth devices."
+  },
+  {
+    "id": 26,
+    "domain": "Mixed Review",
+    "question": "What is the best way to mitigate risks associated with shadow IT within an organization?",
+    "options": [
+      "Block unapproved software installations on endpoints",
+      "Conduct regular security awareness training",
+      "Enforce a policy allowing only approved cloud services",
+      "Monitor network traffic for unauthorized applications"
+    ],
+    "answerIndex": 2,
+    "explanation": "Governance and approved-service policies reduce unmanaged shadow IT risk."
+  },
+  {
+    "id": 27,
+    "domain": "Mixed Review",
+    "question": "An attacker exploits a vulnerability in the database management system to retrieve customer data. What is the likely attack method?",
+    "options": [
+      "SQL injection",
+      "Command injection",
+      "Cross-site scripting (XSS)",
+      "Privilege escalation"
+    ],
+    "answerIndex": 0,
+    "explanation": "SQL injection targets databases by manipulating queries."
+  },
+  {
+    "id": 28,
+    "domain": "Mixed Review",
+    "question": "Which type of malware uses encryption to hold a victim's data hostage until a payment is made?",
+    "options": [
+      "Spyware",
+      "Rootkit",
+      "Ransomware",
+      "Worm"
+    ],
+    "answerIndex": 2,
+    "explanation": "Ransomware encrypts or locks data until ransom is demanded."
+  },
+  {
+    "id": 29,
+    "domain": "Mixed Review",
+    "question": "A company wants to improve security on its wireless network. Which technology provides the strongest encryption and key management?",
+    "options": [
+      "WEP",
+      "WPA2",
+      "WPA3",
+      "TKIP"
+    ],
+    "answerIndex": 2,
+    "explanation": "WPA3 is the strongest modern option listed."
+  },
+  {
+    "id": 30,
+    "domain": "Mixed Review",
+    "question": "An attacker modifies a web application's URL parameters to gain unauthorized access to resources. What is the best defense against this attack?",
+    "options": [
+      "Encrypt all HTTP traffic using HTTPS",
+      "Validate and sanitize user input at the server level",
+      "Deploy a firewall between the application and the database",
+      "Implement multi-factor authentication"
+    ],
+    "answerIndex": 1,
+    "explanation": "Server-side validation and authorization checks prevent parameter tampering."
+  },
+  {
+    "id": 31,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Which tool is best for analyzing packet-level traffic during a suspected network breach?",
+    "options": [
+      "Wireshark",
+      "Nessus",
+      "Metasploit",
+      "Splunk"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Wireshark. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 32,
+    "domain": "Threats & Vulnerabilities",
+    "question": "A malicious actor exploits a misconfigured S3 bucket to access sensitive files. What is the best remediation?",
+    "options": [
+      "Enable logging to monitor access",
+      "Restrict public access and implement access control policies",
+      "Encrypt all files stored in the bucket",
+      "Use endpoint protection"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Restrict public access and implement access control policies. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 33,
+    "domain": "Threats & Vulnerabilities",
+    "question": "An attacker exploits a man-in-the-middle vulnerability on an unsecured wireless network. What is the best way to mitigate this risk?",
+    "options": [
+      "Enable WPA3 encryption",
+      "Require VPN connections",
+      "Block public Wi-Fi",
+      "Configure static IP addresses"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Enable WPA3 encryption. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 34,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Which security principle is enforced by requiring users to authenticate with both a password and a hardware token?",
+    "options": [
+      "Non-repudiation",
+      "Multi-factor authentication",
+      "Integrity",
+      "Least privilege"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Multi-factor authentication. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 35,
+    "domain": "Threats & Vulnerabilities",
+    "question": "An organization uses a third-party vendor for cloud services. What is the best way to ensure compliance with security standards?",
+    "options": [
+      "Encrypt all communications",
+      "Review and enforce the SLA",
+      "Monitor with SIEM",
+      "Deploy endpoint detection"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Review and enforce the SLA. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 36,
+    "domain": "Threats & Vulnerabilities",
+    "question": "What is the main purpose of a data loss prevention (DLP) solution?",
+    "options": [
+      "Prevent unauthorized transmission of sensitive data",
+      "Monitor malware traffic",
+      "Encrypt data",
+      "Block phishing emails"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Prevent unauthorized transmission of sensitive data. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 37,
+    "domain": "Threats & Vulnerabilities",
+    "question": "What is the most effective way to reduce the risk of insider threats?",
+    "options": [
+      "Background checks only",
+      "Access controls and continuous monitoring",
+      "EDR tools only",
+      "Complex passwords"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Access controls and continuous monitoring. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 38,
+    "domain": "Threats & Vulnerabilities",
+    "question": "An attacker uses stolen credentials to gain access to a network. What is the most effective prevention mechanism?",
+    "options": [
+      "MFA",
+      "RBAC",
+      "Awareness training",
+      "Endpoint encryption"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: MFA. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 39,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Which protocol ensures that DNS responses are authentic and have not been tampered with?",
+    "options": [
+      "DNSSEC",
+      "TLS",
+      "HTTPS",
+      "S/MIME"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: DNSSEC. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 40,
+    "domain": "Threats & Vulnerabilities",
+    "question": "What is the primary advantage of ECC over RSA?",
+    "options": [
+      "Equivalent security with shorter keys and efficiency",
+      "Supports hashing",
+      "Greater phishing resistance",
+      "Easier certificate management"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Equivalent security with shorter keys and efficiency. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 41,
+    "domain": "Threats & Vulnerabilities",
+    "question": "What is the primary purpose of MFA for privileged accounts?",
+    "options": [
+      "Increase password complexity",
+      "Reduce unauthorized access risk",
+      "Encrypt communications",
+      "Monitor logins"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Reduce unauthorized access risk. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 42,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Which tool would best identify security vulnerabilities in a web application before deployment?",
+    "options": [
+      "SAST",
+      "IPS",
+      "EDR",
+      "Packet analyzer"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: SAST. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 43,
+    "domain": "Threats & Vulnerabilities",
+    "question": "What is the purpose of a honeynet?",
+    "options": [
+      "Prevent malware",
+      "Divert attackers and gather intelligence",
+      "Encrypt data",
+      "Test patches"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Divert attackers and gather intelligence. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 44,
+    "domain": "Threats & Vulnerabilities",
+    "question": "What is the best mitigation for an unsecured IoT device on a corporate network?",
+    "options": [
+      "Endpoint protection",
+      "Network segmentation for IoT",
+      "Firewall only",
+      "Encrypt all traffic"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Network segmentation for IoT. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 45,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Malicious JavaScript injected into input fields is what attack?",
+    "options": [
+      "SQL injection",
+      "Cross-site scripting (XSS)",
+      "Command injection",
+      "Directory traversal"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Cross-site scripting (XSS). Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 46,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Which control ensures log files cannot be tampered with after creation?",
+    "options": [
+      "Encrypt logs",
+      "Store logs on WORM media",
+      "Rotate logs",
+      "Monitor with SIEM"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Store logs on WORM media. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 47,
+    "domain": "Threats & Vulnerabilities",
+    "question": "A security analyst identifies outbound traffic to a known malicious IP address. What should be first?",
+    "options": [
+      "Isolate affected system",
+      "Notify IR team",
+      "Block IP",
+      "Run vulnerability scan"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Isolate affected system. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 48,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Which best prevents replay attacks?",
+    "options": [
+      "Encrypted session tokens with timestamps",
+      "RBAC",
+      "MFA",
+      "WAF"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Encrypted session tokens with timestamps. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 49,
+    "domain": "Threats & Vulnerabilities",
+    "question": "What is the purpose of Perfect Forward Secrecy?",
+    "options": [
+      "Ensure session keys are not reused",
+      "Protect phishing",
+      "Simplify key management",
+      "Authenticate endpoints"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Ensure session keys are not reused. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 50,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Which technology best protects a cloud storage bucket from unauthorized access?",
+    "options": [
+      "Encrypt stored data",
+      "Restrict bucket access using identity-based permissions",
+      "Static IPs",
+      "SIEM logs"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Restrict bucket access using identity-based permissions. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 51,
+    "domain": "Threats & Vulnerabilities",
+    "question": "High CPU plus outbound requests to random IPs most likely indicates what?",
+    "options": [
+      "Botnet activity",
+      "SQL injection",
+      "Insider threat",
+      "Brute force"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Botnet activity. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 52,
+    "domain": "Threats & Vulnerabilities",
+    "question": "What is TLS's primary function in web apps?",
+    "options": [
+      "Protect app code",
+      "Encrypt data in transit for confidentiality and integrity",
+      "Block malicious HTTP",
+      "Authenticate users"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Encrypt data in transit for confidentiality and integrity. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 53,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Credentials leaked in a breach are used to access an account. Best mitigation?",
+    "options": [
+      "Monitor logs",
+      "MFA",
+      "AES stored credentials",
+      "Password changes every 90 days"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: MFA. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 54,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Which mitigates insider threats?",
+    "options": [
+      "Background checks and least privilege",
+      "Honeynet",
+      "Encrypt internal comms",
+      "IDS"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Background checks and least privilege. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 55,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Which framework protects healthcare information?",
+    "options": [
+      "PCI DSS",
+      "GDPR",
+      "HIPAA",
+      "ISO 27001"
+    ],
+    "answerIndex": 2,
+    "explanation": "Correct answer: HIPAA. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 56,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Main benefit of SOAR?",
+    "options": [
+      "Block all traffic",
+      "Correlate logs only",
+      "Automate incident response workflows",
+      "Encrypt cloud data"
+    ],
+    "answerIndex": 2,
+    "explanation": "Correct answer: Automate incident response workflows. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 57,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Improperly configured directory exploited to access files is what?",
+    "options": [
+      "Command injection",
+      "Directory traversal",
+      "Buffer overflow",
+      "Privilege escalation"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Directory traversal. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 58,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Primary advantage of ECC over RSA?",
+    "options": [
+      "Faster encryption and shorter equivalent keys",
+      "Simplified key management",
+      "Phishing resistance",
+      "Scalability"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Faster encryption and shorter equivalent keys. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 59,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Email with malicious link appearing trusted is generally what?",
+    "options": [
+      "Whaling",
+      "Smishing",
+      "Phishing",
+      "Spear phishing"
+    ],
+    "answerIndex": 2,
+    "explanation": "Correct answer: Phishing. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 60,
+    "domain": "Threats & Vulnerabilities",
+    "question": "Primary purpose of vulnerability scan?",
+    "options": [
+      "Block traffic",
+      "Identify and prioritize weaknesses",
+      "Monitor users",
+      "Test IR plan"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Identify and prioritize weaknesses. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 61,
+    "domain": "Architecture & Operations",
+    "question": "Most effective way to prevent brute force on remote login?",
+    "options": [
+      "CAPTCHA only",
+      "AES encrypt attempts",
+      "Password rotation",
+      "Account lockout and MFA"
+    ],
+    "answerIndex": 3,
+    "explanation": "Correct answer: Account lockout and MFA. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 62,
+    "domain": "Architecture & Operations",
+    "question": "Web vulnerability allowing unauthorized backend database access is likely what?",
+    "options": [
+      "SQL injection",
+      "XSS",
+      "Directory traversal",
+      "Session hijacking"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: SQL injection. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 63,
+    "domain": "Architecture & Operations",
+    "question": "Main purpose of RBAC?",
+    "options": [
+      "Limit permissions to job responsibilities",
+      "Encrypt files",
+      "Monitor activity",
+      "Provide MFA"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Limit permissions to job responsibilities. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 64,
+    "domain": "Architecture & Operations",
+    "question": "Security labels based on data classification represent which model?",
+    "options": [
+      "DAC",
+      "MAC",
+      "ABAC",
+      "RBAC"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: MAC. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 65,
+    "domain": "Architecture & Operations",
+    "question": "After exploiting an unpatched vulnerability in a pen test, what should tester do next?",
+    "options": [
+      "Escalate privileges",
+      "Notify and document vulnerability",
+      "Keep testing",
+      "Disconnect system"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Notify and document vulnerability. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 66,
+    "domain": "Architecture & Operations",
+    "question": "Best tool for identifying vulnerabilities in a running network environment?",
+    "options": [
+      "Nessus",
+      "Wireshark",
+      "Splunk",
+      "Metasploit"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Nessus. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 67,
+    "domain": "Architecture & Operations",
+    "question": "Primary function of a DMZ?",
+    "options": [
+      "Encrypt traffic",
+      "Host public-facing services isolated from internal network",
+      "Log all traffic",
+      "Block all malicious traffic"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Host public-facing services isolated from internal network. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 68,
+    "domain": "Architecture & Operations",
+    "question": "Primary purpose of DLP?",
+    "options": [
+      "Block critical-system access",
+      "Prevent sensitive data leaving org",
+      "Encrypt data",
+      "Monitor employees"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Prevent sensitive data leaving org. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 69,
+    "domain": "Architecture & Operations",
+    "question": "Redirecting traffic by altering DNS entries is what?",
+    "options": [
+      "MITM",
+      "DNS poisoning",
+      "ARP spoofing",
+      "Evil twin"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: DNS poisoning. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 70,
+    "domain": "Architecture & Operations",
+    "question": "What is the purpose of salting passwords?",
+    "options": [
+      "Encrypt passwords",
+      "Prevent rainbow table/precomputed attacks",
+      "Compatibility",
+      "Simplify management"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Prevent rainbow table/precomputed attacks. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 71,
+    "domain": "Architecture & Operations",
+    "question": "Increased outbound traffic from IoT device most likely means?",
+    "options": [
+      "Scanning",
+      "Botnet/DDoS activity",
+      "Ransomware",
+      "Vendor updates"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Botnet/DDoS activity. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 72,
+    "domain": "Architecture & Operations",
+    "question": "Which ensures data is not altered during transmission?",
+    "options": [
+      "Hashing",
+      "Encryption",
+      "Tokenization",
+      "Salting"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Hashing. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 73,
+    "domain": "Architecture & Operations",
+    "question": "Stolen session tokens used to impersonate user: best mitigation?",
+    "options": [
+      "Secure cookie attributes and session timeouts",
+      "TLS only",
+      "WAF",
+      "MFA"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Secure cookie attributes and session timeouts. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 74,
+    "domain": "Architecture & Operations",
+    "question": "Primary benefit of network segmentation?",
+    "options": [
+      "Prevent unauthorized devices",
+      "Limit malware spread and unauthorized access",
+      "Encrypt all traffic",
+      "Simplify performance"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Limit malware spread and unauthorized access. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 75,
+    "domain": "Architecture & Operations",
+    "question": "Fraudulent wireless AP intercepting sensitive information is what?",
+    "options": [
+      "Evil twin attack",
+      "Bluejacking",
+      "Rogue AP",
+      "ARP poisoning"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Evil twin attack. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 76,
+    "domain": "Architecture & Operations",
+    "question": "Phishing emails sent to a specific group is what?",
+    "options": [
+      "Whaling",
+      "Spear phishing",
+      "Vishing",
+      "Smishing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Spear phishing. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 77,
+    "domain": "Architecture & Operations",
+    "question": "Best approach for time-based user access restrictions?",
+    "options": [
+      "Time-based access control policies",
+      "RBAC",
+      "WAF",
+      "Encrypt credentials"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Time-based access control policies. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 78,
+    "domain": "Architecture & Operations",
+    "question": "Main function of a vulnerability scanner?",
+    "options": [
+      "Identify security gaps",
+      "Block access",
+      "Encrypt transmission",
+      "Monitor behavior"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Identify security gaps. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 79,
+    "domain": "Architecture & Operations",
+    "question": "Bluetooth vulnerability used to access data on mobile device is what?",
+    "options": [
+      "Bluejacking",
+      "Bluesnarfing",
+      "Evil twin",
+      "Rogue AP"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Bluesnarfing. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 80,
+    "domain": "Architecture & Operations",
+    "question": "Purpose of CRL in PKI?",
+    "options": [
+      "Provide encryption",
+      "Track and revoke compromised certificates",
+      "Validate key pairs",
+      "Authenticate certificate holders"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Track and revoke compromised certificates. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 81,
+    "domain": "Architecture & Operations",
+    "question": "Technology evaluating device health before network access?",
+    "options": [
+      "NAC",
+      "EDR",
+      "IPS",
+      "SIEM"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: NAC. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 82,
+    "domain": "Architecture & Operations",
+    "question": "Compromised email account used to send internal phishing is what?",
+    "options": [
+      "Whaling",
+      "Business Email Compromise (BEC)",
+      "Phishing",
+      "Spear phishing"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Business Email Compromise (BEC). Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 83,
+    "domain": "Architecture & Operations",
+    "question": "Best mitigation for unpatched OS vulnerabilities?",
+    "options": [
+      "IPS",
+      "Robust patch management",
+      "MFA",
+      "Encrypt traffic"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Robust patch management. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 84,
+    "domain": "Architecture & Operations",
+    "question": "Best ensures confidentiality of cloud bucket data?",
+    "options": [
+      "Encrypt data at rest and in transit",
+      "WAF",
+      "Endpoint protection",
+      "Tokenization"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Encrypt data at rest and in transit. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 85,
+    "domain": "Architecture & Operations",
+    "question": "Best immediate action for DDoS against public website?",
+    "options": [
+      "Block suspicious IPs",
+      "Notify users",
+      "Deploy cloud-based DDoS mitigation",
+      "Increase capacity"
+    ],
+    "answerIndex": 2,
+    "explanation": "Correct answer: Deploy cloud-based DDoS mitigation. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 86,
+    "domain": "Architecture & Operations",
+    "question": "Primary purpose of PFS?",
+    "options": [
+      "Prevent reuse/compromise of session keys",
+      "Strengthen hashing",
+      "Simplify rotation",
+      "Detect modification"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Prevent reuse/compromise of session keys. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 87,
+    "domain": "Architecture & Operations",
+    "question": "Tool used to simulate attacks and test security posture?",
+    "options": [
+      "Metasploit",
+      "Nessus",
+      "Wireshark",
+      "Splunk"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Metasploit. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 88,
+    "domain": "Architecture & Operations",
+    "question": "Best way to prevent unauthorized devices on corporate wireless?",
+    "options": [
+      "WPA3 only",
+      "Deploy NAC",
+      "Endpoint detection",
+      "Static IP"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Deploy NAC. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 89,
+    "domain": "Architecture & Operations",
+    "question": "Protocol for sensitive email communications unreadable by unauthorized parties?",
+    "options": [
+      "S/MIME",
+      "TLS",
+      "SSH",
+      "IPsec"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: S/MIME. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 90,
+    "domain": "Governance & Crypto",
+    "question": "Crafted packets exploit buffer overflow in web server; likely goal?",
+    "options": [
+      "Steal data",
+      "Execute arbitrary code",
+      "Redirect traffic",
+      "Crash server"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Execute arbitrary code. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 91,
+    "domain": "Governance & Crypto",
+    "question": "Practice reducing unnecessary app features/components to minimize attack surface?",
+    "options": [
+      "Hardening",
+      "Tokenization",
+      "Segmentation",
+      "Input validation"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Hardening. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 92,
+    "domain": "Governance & Crypto",
+    "question": "Weak password policy used to access admin account: best remediation?",
+    "options": [
+      "Password complexity requirements",
+      "AES stored passwords",
+      "Regular changes",
+      "Biometric auth"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Password complexity requirements. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 93,
+    "domain": "Governance & Crypto",
+    "question": "Primary function of TLS in web applications?",
+    "options": [
+      "End-to-end encryption for data in transit",
+      "Block traffic",
+      "Authenticate server only",
+      "Detect/log malicious activity"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: End-to-end encryption for data in transit. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 94,
+    "domain": "Governance & Crypto",
+    "question": "DNS cache entries manipulated to redirect users is what?",
+    "options": [
+      "DNS poisoning",
+      "ARP spoofing",
+      "Evil twin",
+      "Replay"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: DNS poisoning. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 95,
+    "domain": "Governance & Crypto",
+    "question": "Kernel-level stealth malware with persistent access is what?",
+    "options": [
+      "Rootkit",
+      "Trojan",
+      "Worm",
+      "Spyware"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Rootkit. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 96,
+    "domain": "Governance & Crypto",
+    "question": "Primary advantage of ECC over RSA-like algorithms?",
+    "options": [
+      "Shorter key lengths with equivalent security",
+      "Quantum resistance",
+      "Certificate management",
+      "Legacy compatibility"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Shorter key lengths with equivalent security. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 97,
+    "domain": "Governance & Crypto",
+    "question": "Purpose of SOAR?",
+    "options": [
+      "Encrypt communications",
+      "Automate incident response workflows",
+      "Block phishing",
+      "Vulnerability scanning"
+    ],
+    "answerIndex": 1,
+    "explanation": "Correct answer: Automate incident response workflows. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 98,
+    "domain": "Governance & Crypto",
+    "question": "Context-aware access control enables what?",
+    "options": [
+      "Access based on behavior, location, device type",
+      "Only time windows",
+      "Roles only",
+      "Encrypt all transmissions"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: Access based on behavior, location, device type. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 99,
+    "domain": "Governance & Crypto",
+    "question": "Framework for financial records/accountability in public companies?",
+    "options": [
+      "GDPR",
+      "PCI DSS",
+      "HIPAA",
+      "SOX"
+    ],
+    "answerIndex": 3,
+    "explanation": "Correct answer: SOX. Review this topic in the study notes and retake missed questions."
+  },
+  {
+    "id": 100,
+    "domain": "Governance & Crypto",
+    "question": "Best mitigation for credential stuffing?",
+    "options": [
+      "MFA",
+      "SHA-256 passwords",
+      "90-day changes",
+      "Block same IP repeats"
+    ],
+    "answerIndex": 0,
+    "explanation": "Correct answer: MFA. Review this topic in the study notes and retake missed questions."
+  }
+]

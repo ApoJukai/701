@@ -1,0 +1,9 @@
+{
+  "name": "Security+ SY0-701 Study App",
+  "short_name": "Sec+701",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eef3f8",
+  "theme_color": "#136f63",
+  "icons": []
+}

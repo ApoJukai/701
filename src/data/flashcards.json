@@ -1,0 +1,42 @@
+[
+  {
+    "front": "Zero Trust",
+    "back": "Never trust, always verify. Requires continuous verification, least privilege, and policy-driven access."
+  },
+  {
+    "front": "CIA Triad",
+    "back": "Confidentiality, Integrity, Availability."
+  },
+  {
+    "front": "SIEM",
+    "back": "Aggregates, correlates, and alerts on logs/security events."
+  },
+  {
+    "front": "SOAR",
+    "back": "Automates incident response workflows and reduces manual effort."
+  },
+  {
+    "front": "DLP",
+    "back": "Prevents sensitive data from leaving the organization without authorization."
+  },
+  {
+    "front": "NAC",
+    "back": "Controls network access by authorizing users/devices and checking security posture."
+  },
+  {
+    "front": "Hashing",
+    "back": "Provides integrity; detects data changes."
+  },
+  {
+    "front": "Salting",
+    "back": "Adds random data before hashing to prevent rainbow table attacks."
+  },
+  {
+    "front": "Parameterized queries",
+    "back": "Primary defense against SQL injection."
+  },
+  {
+    "front": "Secure cookies",
+    "back": "Use HttpOnly, Secure, SameSite, and session timeout to protect session tokens."
+  }
+]
