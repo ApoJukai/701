@@ -11,6 +11,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   build-web:
     name: Build React Web App
@@ -31,7 +35,7 @@ jobs:
       - name: Build React app
         run: npm run build
 
-      - name: Upload web build artifact
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
