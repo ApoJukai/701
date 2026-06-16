@@ -2,8 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // Relative asset paths work well for GitHub Pages project sites:
-// https://USERNAME.github.io/REPOSITORY-NAME/
+// https://ApoJukai.github.io/701/
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: '/701/',
 })
