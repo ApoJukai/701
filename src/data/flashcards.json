@@ -38,5 +38,817 @@
   {
     "front": "Secure cookies",
     "back": "Use HttpOnly, Secure, SameSite, and session timeout to protect session tokens."
+  },
+  {
+    "front": "AAA Model",
+    "back": "Authentication (verify identity), Authorization (permissions), Accounting (logging/auditing)."
+  },
+  {
+    "front": "Non-repudiation",
+    "back": "Ensures a party cannot deny actions; uses digital signatures and audit logs."
+  },
+  {
+    "front": "Symmetric encryption",
+    "back": "Same key for encryption/decryption. Fast. Examples: AES, DES, 3DES."
+  },
+  {
+    "front": "Asymmetric encryption",
+    "back": "Public and private key pairs. Slower but enables digital signatures. Examples: RSA, ECC."
+  },
+  {
+    "front": "Public Key Infrastructure (PKI)",
+    "back": "System of CAs, certificates, and key management for secure digital communications."
+  },
+  {
+    "front": "Digital Certificate",
+    "back": "Binds public key to identity. Issued by CA. Contains subject, issuer, serial number, validity dates."
+  },
+  {
+    "front": "Certificate Authority (CA)",
+    "back": "Issues, manages, and revokes digital certificates. Trusted third party."
+  },
+  {
+    "front": "Certificate Revocation List (CRL)",
+    "back": "List of revoked certificates before expiration; used by clients to verify certificate validity."
+  },
+  {
+    "front": "OCSP",
+    "back": "Online Certificate Status Protocol. Real-time alternative to CRL for certificate validation."
+  },
+  {
+    "front": "TLS/SSL",
+    "back": "Protocols for secure data transmission over networks. TLS 1.2+ is current standard."
+  },
+  {
+    "front": "Multifactor Authentication (MFA)",
+    "back": "Requires two or more verification methods: something you know, have, are, or location."
+  },
+  {
+    "front": "Single Sign-On (SSO)",
+    "back": "Authenticate once to access multiple applications/systems."
+  },
+  {
+    "front": "LDAP",
+    "back": "Lightweight Directory Access Protocol. Used for centralized user directory and authentication."
+  },
+  {
+    "front": "Kerberos",
+    "back": "Network authentication protocol using tickets; common in Windows domains (Active Directory)."
+  },
+  {
+    "front": "RADIUS",
+    "back": "Remote Authentication Dial-In User Service. Centralizes authentication for network access."
+  },
+  {
+    "front": "TACACS+",
+    "back": "Terminal Access Controller Access Control System. Separates authentication, authorization, accounting."
+  },
+  {
+    "front": "OAuth 2.0",
+    "back": "Authorization framework; allows third-party apps to access resources without sharing passwords."
+  },
+  {
+    "front": "SAML",
+    "back": "Security Assertion Markup Language. XML-based SSO for federated identity across domains."
+  },
+  {
+    "front": "Principle of Least Privilege (PoLP)",
+    "back": "Users/systems get minimum permissions needed to perform their role."
+  },
+  {
+    "front": "Role-Based Access Control (RBAC)",
+    "back": "Access decisions based on user roles; simplifies permission management."
+  },
+  {
+    "front": "Attribute-Based Access Control (ABAC)",
+    "back": "Fine-grained access control using policies with attributes (user, resource, environment)."
+  },
+  {
+    "front": "Access Control List (ACL)",
+    "back": "Specifies which users/systems can access a resource and what actions are allowed."
+  },
+  {
+    "front": "Firewall",
+    "back": "Network security device filtering traffic based on rules; can be stateless or stateful."
+  },
+  {
+    "front": "Intrusion Detection System (IDS)",
+    "back": "Monitors network/system for suspicious activity; alerts on detection. Does not block traffic."
+  },
+  {
+    "front": "Intrusion Prevention System (IPS)",
+    "back": "Active IDS; detects and automatically blocks suspicious traffic."
+  },
+  {
+    "front": "Network-based IDS/IPS",
+    "back": "Monitors entire network segments; placed at network perimeter."
+  },
+  {
+    "front": "Host-based IDS/IPS",
+    "back": "Monitors individual system logs and behavior; installed on each host."
+  },
+  {
+    "front": "WAF",
+    "back": "Web Application Firewall. Protects web apps from attacks like SQL injection, XSS, DDoS."
+  },
+  {
+    "front": "Proxy",
+    "back": "Intermediary between client and server; can filter, cache, and control traffic."
+  },
+  {
+    "front": "Forward proxy",
+    "back": "Sits between clients and external servers; filters outbound traffic."
+  },
+  {
+    "front": "Reverse proxy",
+    "back": "Sits between external clients and internal servers; provides load balancing and protection."
+  },
+  {
+    "front": "VPN",
+    "back": "Virtual Private Network. Encrypts traffic and tunnels through untrusted networks securely."
+  },
+  {
+    "front": "Site-to-site VPN",
+    "back": "Connects entire networks/branches securely over public internet."
+  },
+  {
+    "front": "Remote Access VPN",
+    "back": "Allows individual users to securely connect to corporate network from remote locations."
+  },
+  {
+    "front": "IPSec",
+    "back": "Protocol suite for VPN; encrypts and authenticates IP packets. Operates at Layer 3."
+  },
+  {
+    "front": "SSL/TLS VPN",
+    "back": "VPN using SSL/TLS protocols; browser-based or client-based remote access."
+  },
+  {
+    "front": "Honeypot",
+    "back": "Decoy system to lure attackers, detect intrusions, and gather threat intelligence."
+  },
+  {
+    "front": "Honeynet",
+    "back": "Network of honeypots; creates entire decoy network for advanced threat research."
+  },
+  {
+    "front": "Honeytokens",
+    "back": "Fake credentials/data planted to detect unauthorized access or misuse."
+  },
+  {
+    "front": "SIEM vs IDS",
+    "back": "SIEM: logs/correlates; IDS: detects intrusions. SIEM is broader and includes analysis."
+  },
+  {
+    "front": "Vulnerability",
+    "back": "Weakness in system that can be exploited; may or may not have known exploits."
+  },
+  {
+    "front": "Threat",
+    "back": "Potential cause of harm to assets; comes from threat actors or natural disasters."
+  },
+  {
+    "front": "Risk",
+    "back": "Likelihood × Impact; the probability a threat will exploit a vulnerability."
+  },
+  {
+    "front": "Risk Assessment",
+    "back": "Process of identifying, analyzing, and evaluating risks to prioritize mitigation."
+  },
+  {
+    "front": "Qualitative Risk Assessment",
+    "back": "Uses descriptors (high, medium, low) to rank risks; less precise but faster."
+  },
+  {
+    "front": "Quantitative Risk Assessment",
+    "back": "Uses numerical values (dollars, percentages); precise but data-intensive."
+  },
+  {
+    "front": "Risk Mitigation",
+    "back": "Implement controls to reduce risk probability or impact."
+  },
+  {
+    "front": "Risk Transference",
+    "back": "Transfer risk to third party via insurance, outsourcing, or SLAs."
+  },
+  {
+    "front": "Risk Acceptance",
+    "back": "Acknowledge risk and choose not to mitigate; document decision."
+  },
+  {
+    "front": "Risk Avoidance",
+    "back": "Eliminate the activity or system that poses the risk."
+  },
+  {
+    "front": "Business Impact Analysis (BIA)",
+    "back": "Identifies critical business functions and assesses disruption impact; determines RTO/RPO."
+  },
+  {
+    "front": "Recovery Time Objective (RTO)",
+    "back": "Maximum acceptable time to restore a system/service after disruption."
+  },
+  {
+    "front": "Recovery Point Objective (RPO)",
+    "back": "Maximum acceptable data loss measured in time; defines backup frequency."
+  },
+  {
+    "front": "Disaster Recovery Plan (DRP)",
+    "back": "Procedures to restore critical systems/data after major outages or disasters."
+  },
+  {
+    "front": "Business Continuity Plan (BCP)",
+    "back": "Broader than DRP; ensures business operations continue during disruptions."
+  },
+  {
+    "front": "Cold site",
+    "back": "Backup facility with infrastructure but no data/systems; slowest recovery."
+  },
+  {
+    "front": "Warm site",
+    "back": "Backup facility with some infrastructure and data; medium recovery time."
+  },
+  {
+    "front": "Hot site",
+    "back": "Fully redundant facility with current data; near-instantaneous failover."
+  },
+  {
+    "front": "MTPD",
+    "back": "Mean Time to Detect; average time to identify a security incident."
+  },
+  {
+    "front": "MTTR",
+    "back": "Mean Time To Repair/Recover; average time to restore service after failure."
+  },
+  {
+    "front": "MTTF",
+    "back": "Mean Time To Failure; average time between system failures."
+  },
+  {
+    "front": "Availability",
+    "back": "Measured as uptime percentage; formula: MTTF / (MTTF + MTTR)."
+  },
+  {
+    "front": "Malware",
+    "back": "Malicious software; includes viruses, trojans, ransomware, spyware, worms."
+  },
+  {
+    "front": "Virus",
+    "back": "Self-replicating malware attached to files; requires host program to execute."
+  },
+  {
+    "front": "Worm",
+    "back": "Self-replicating malware that spreads independently without host file; consumes bandwidth."
+  },
+  {
+    "front": "Trojan",
+    "back": "Disguised as legitimate software; does not replicate; requires user execution."
+  },
+  {
+    "front": "Ransomware",
+    "back": "Encrypts files/systems and demands payment; delivered via phishing or RDP exploits."
+  },
+  {
+    "front": "Spyware",
+    "back": "Monitors user activity (keystrokes, browsing) and exfiltrates data without consent."
+  },
+  {
+    "front": "Rootkit",
+    "back": "Malware with kernel/admin privileges; hides itself and other malware; very difficult to detect."
+  },
+  {
+    "front": "Botnet",
+    "back": "Network of compromised devices (bots) controlled remotely by attacker (botmaster)."
+  },
+  {
+    "front": "Command & Control (C2/C&C)",
+    "back": "Infrastructure attacker uses to communicate with and control malware/botnets."
+  },
+  {
+    "front": "Phishing",
+    "back": "Social engineering via email/SMS impersonating trusted entity to steal credentials."
+  },
+  {
+    "front": "Spear phishing",
+    "back": "Targeted phishing attack against specific individual or organization with customized content."
+  },
+  {
+    "front": "Whaling",
+    "back": "Spear phishing targeting high-value targets (executives, C-level)."
+  },
+  {
+    "front": "Vishing",
+    "back": "Voice phishing; attacker calls victim posing as authority to extract sensitive info."
+  },
+  {
+    "front": "Smishing",
+    "back": "SMS phishing; malicious text messages with links or requests for information."
+  },
+  {
+    "front": "Business Email Compromise (BEC)",
+    "back": "Attackers impersonate executives to trick employees into transferring funds or data."
+  },
+  {
+    "front": "Social Engineering",
+    "back": "Manipulating people to divulge confidential information or perform unsafe actions."
+  },
+  {
+    "front": "Pretexting",
+    "back": "Creating false scenario/pretense to gain trust and extract information."
+  },
+  {
+    "front": "Baiting",
+    "back": "Entices user with something appealing (USB drive, prize) to execute malware."
+  },
+  {
+    "front": "Tailgating/Piggybacking",
+    "back": "Unauthorized person follows authorized employee through secured access point."
+  },
+  {
+    "front": "Dumpster diving",
+    "back": "Searching trash for discarded documents/info containing sensitive data."
+  },
+  {
+    "front": "Shoulder surfing",
+    "back": "Observing user entering passwords/PINs over their shoulder."
+  },
+  {
+    "front": "SQL Injection",
+    "back": "Attacker inserts malicious SQL code into input fields to manipulate database queries."
+  },
+  {
+    "front": "Cross-Site Scripting (XSS)",
+    "back": "Attacker injects malicious scripts into web pages viewed by victims; executes in browser."
+  },
+  {
+    "front": "Cross-Site Request Forgery (CSRF)",
+    "back": "Tricks authenticated user into performing unintended actions on another website."
+  },
+  {
+    "front": "Command Injection",
+    "back": "Attacker inserts OS commands into input fields; application executes them with its privileges."
+  },
+  {
+    "front": "Buffer Overflow",
+    "back": "Attackers write excessive data into buffer, corrupting adjacent memory; enables code execution."
+  },
+  {
+    "front": "Man-in-the-Middle (MITM)",
+    "back": "Attacker intercepts and may alter communications between two parties."
+  },
+  {
+    "front": "Replay Attack",
+    "back": "Attacker captures and resends valid messages/authentication tokens to gain unauthorized access."
+  },
+  {
+    "front": "Brute Force Attack",
+    "back": "Attacker tries all possible password/key combinations; slow but guaranteed to succeed eventually."
+  },
+  {
+    "front": "Dictionary Attack",
+    "back": "Attacker uses list of common passwords/words; faster than brute force but limited scope."
+  },
+  {
+    "front": "Credential Stuffing",
+    "back": "Attacker uses leaked password databases to attempt login on other sites."
+  },
+  {
+    "front": "Rainbow Table",
+    "back": "Precomputed hash table for quick password cracking; defeated by salting."
+  },
+  {
+    "front": "Denial of Service (DoS)",
+    "back": "Attacker floods target with traffic/requests to exhaust resources and deny legitimate users access."
+  },
+  {
+    "front": "Distributed Denial of Service (DDoS)",
+    "back": "DoS attack from multiple sources (botnet); harder to block; more powerful than single-source DoS."
+  },
+  {
+    "front": "Privilege Escalation",
+    "back": "Attacker gains higher-level permissions/access than initially granted."
+  },
+  {
+    "front": "Lateral Movement",
+    "back": "Attacker moves from compromised system to other systems on the same network."
+  },
+  {
+    "front": "Persistence",
+    "back": "Attacker establishes mechanism to maintain access even after reboot/password change."
+  },
+  {
+    "front": "Exfiltration",
+    "back": "Unauthorized transfer of sensitive data out of organization."
+  },
+  {
+    "front": "Advanced Persistent Threat (APT)",
+    "back": "Sophisticated, targeted attack by skilled adversaries; maintains long-term presence."
+  },
+  {
+    "front": "Indicators of Compromise (IoC)",
+    "back": "Artifacts suggesting breach: IP addresses, file hashes, domains, email headers."
+  },
+  {
+    "front": "Attack Surface",
+    "back": "All possible entry points/methods attackers can use to breach an organization."
+  },
+  {
+    "front": "Threat Actor",
+    "back": "Entity conducting the attack; categories: script kiddie, hacker, organized crime, nation-state."
+  },
+  {
+    "front": "Nation-state",
+    "back": "Government-backed threat actor; highly resourced, sophisticated, focused on espionage/sabotage."
+  },
+  {
+    "front": "Insider Threat",
+    "back": "Malicious or negligent employee/contractor with legitimate access causing damage."
+  },
+  {
+    "front": "Supply Chain Attack",
+    "back": "Attacker targets vendor/supplier to compromise their customers; examples: SolarWinds, 3CX."
+  },
+  {
+    "front": "Incident Response Plan (IRP)",
+    "back": "Procedures for detecting, containing, eradicating, and recovering from security incidents."
+  },
+  {
+    "front": "Incident Response Phases",
+    "back": "Preparation, Detection/Analysis, Containment, Eradication, Recovery, Post-Incident Review."
+  },
+  {
+    "front": "Containment Strategy",
+    "back": "Short-term (isolate system), Long-term (fix without losing evidence). Balances speed vs. evidence."
+  },
+  {
+    "front": "Chain of Custody",
+    "back": "Documented process of who accessed evidence, when, and why; maintains forensic integrity."
+  },
+  {
+    "front": "Digital Forensics",
+    "back": "Collect, preserve, analyze digital evidence from systems/devices following legal procedures."
+  },
+  {
+    "front": "Write Blocker",
+    "back": "Device preventing accidental data modification during forensic analysis."
+  },
+  {
+    "front": "Network Segmentation",
+    "back": "Dividing network into smaller subnets/zones to limit lateral movement and contain breaches."
+  },
+  {
+    "front": "DMZ",
+    "back": "Demilitarized Zone; buffer between internal network and internet; hosts public-facing services."
+  },
+  {
+    "front": "VLAN",
+    "back": "Virtual LAN; logically separates network segments; provides isolation and security."
+  },
+  {
+    "front": "Air-Gapped Network",
+    "back": "Physically isolated from other networks; no direct connectivity; highest security but least convenient."
+  },
+  {
+    "front": "Defense in Depth",
+    "back": "Multiple layers of security controls to prevent/detect/respond to attacks at different levels."
+  },
+  {
+    "front": "Patch Management",
+    "back": "Process of regularly updating software/firmware to fix vulnerabilities and bugs."
+  },
+  {
+    "front": "Vulnerability Scanning",
+    "back": "Automated tool (Nessus, OpenVAS) identifies known vulnerabilities in systems/applications."
+  },
+  {
+    "front": "Penetration Testing",
+    "back": "Authorized simulated attack to identify exploitable vulnerabilities; goes deeper than scanning."
+  },
+  {
+    "front": "Difference between Vulnerability Scan and Pen Test",
+    "back": "Scan: automated, identifies known vulns. Pen test: manual, exploits vulns, tests defenses."
+  },
+  {
+    "front": "Data Classification",
+    "back": "Categorizing data by sensitivity: Public, Internal, Confidential, Restricted/Top Secret."
+  },
+  {
+    "front": "Personally Identifiable Information (PII)",
+    "back": "Data identifying individuals: SSN, credit cards, passport, biometrics, location."
+  },
+  {
+    "front": "Protected Health Information (PHI)",
+    "back": "Health data regulated by HIPAA; includes medical records, diagnoses, payment info."
+  },
+  {
+    "front": "Payment Card Industry (PCI) DSS",
+    "back": "Standard protecting cardholder data; requires encryption, access control, logging, regular audits."
+  },
+  {
+    "front": "GDPR",
+    "back": "General Data Protection Regulation (EU); protects personal data; hefty fines for violations."
+  },
+  {
+    "front": "HIPAA",
+    "back": "Health Insurance Portability and Accountability Act (US); protects health information."
+  },
+  {
+    "front": "SOC 2",
+    "back": "Service Organization Control 2; audits service providers' security, availability, processing integrity."
+  },
+  {
+    "front": "ISO/IEC 27001",
+    "back": "International standard for information security management systems (ISMS)."
+  },
+  {
+    "front": "NIST Cybersecurity Framework",
+    "back": "Guidelines for managing cybersecurity risk; five functions: Identify, Protect, Detect, Respond, Recover."
+  },
+  {
+    "front": "CIS Controls",
+    "back": "Prioritized set of actionable practices (18 controls) to defend against cyber attacks."
+  },
+  {
+    "front": "Data Encryption at Rest",
+    "back": "Encrypts stored data; protects against unauthorized access if physical storage is stolen."
+  },
+  {
+    "front": "Data Encryption in Transit",
+    "back": "Encrypts data being transmitted over networks; uses TLS, IPSec, VPN."
+  },
+  {
+    "front": "Data Masking",
+    "back": "Hides sensitive data with characters/symbols; protects PII in non-production environments."
+  },
+  {
+    "front": "Tokenization",
+    "back": "Replaces sensitive data with random token; original data stored securely elsewhere."
+  },
+  {
+    "front": "Data Loss Prevention (DLP)",
+    "back": "Detects and prevents unauthorized data exfiltration via email, USB, cloud."
+  },
+  {
+    "front": "Backup and Recovery",
+    "back": "Regular copies of data stored separately; critical for disaster recovery and ransomware defense."
+  },
+  {
+    "front": "Incremental Backup",
+    "back": "Backs up only changed data since last backup; space-efficient but slower to restore."
+  },
+  {
+    "front": "Differential Backup",
+    "back": "Backs up data changed since last full backup; middle ground between incremental and full."
+  },
+  {
+    "front": "Full Backup",
+    "back": "Backs up all data; large size but fastest restore; forms baseline for incremental/differential."
+  },
+  {
+    "front": "3-2-1 Backup Rule",
+    "back": "Keep 3 copies of data: 2 on different media types, 1 offsite."
+  },
+  {
+    "front": "Immutable Backup",
+    "back": "Backup cannot be modified or deleted (temporarily or permanently); protects against ransomware."
+  },
+  {
+    "front": "Cloud Security",
+    "back": "Shared responsibility model: provider secures infrastructure; customer secures data/access."
+  },
+  {
+    "front": "Infrastructure as a Service (IaaS)",
+    "back": "Cloud provider manages hardware; customer manages OS, apps, data. Example: AWS EC2."
+  },
+  {
+    "front": "Platform as a Service (PaaS)",
+    "back": "Provider manages infrastructure and platform; customer manages apps and data. Example: Heroku."
+  },
+  {
+    "front": "Software as a Service (SaaS)",
+    "back": "Provider manages everything; customer only uses the app. Example: Office 365, Salesforce."
+  },
+  {
+    "front": "Cloud Storage Security",
+    "back": "Use strong authentication, encryption, access controls; avoid misconfiguration."
+  },
+  {
+    "front": "Container Security",
+    "back": "Secure Docker/container images: scan for vulns, use least privilege, control runtime."
+  },
+  {
+    "front": "Kubernetes Security",
+    "back": "Secure container orchestration: RBAC, network policies, pod security policies, secrets management."
+  },
+  {
+    "front": "API Security",
+    "back": "Protect APIs: rate limiting, authentication, input validation, secure coding practices."
+  },
+  {
+    "front": "Mobile Security",
+    "back": "Secure mobile devices: MDM, app vetting, encryption, strong authentication, remote wipe capability."
+  },
+  {
+    "front": "Mobile Device Management (MDM)",
+    "back": "Centralized tool to manage mobile devices: enforce policies, deploy apps, remote lock/wipe."
+  },
+  {
+    "front": "Endpoint Protection",
+    "back": "Security software on end devices: antivirus, antimalware, firewall, intrusion prevention."
+  },
+  {
+    "front": "Extended Detection and Response (XDR)",
+    "back": "Integrated security platform correlating data from multiple sources (endpoint, network, cloud)."
+  },
+  {
+    "front": "Security Information and Event Management (SIEM)",
+    "back": "Aggregates and analyzes logs from all sources to detect and investigate security incidents."
+  },
+  {
+    "front": "Endpoint Detection and Response (EDR)",
+    "back": "Tool on endpoints detecting/investigating suspicious behavior; enables threat hunting."
+  },
+  {
+    "front": "Security Orchestration, Automation, and Response (SOAR)",
+    "back": "Automates incident response: collects data, correlates events, executes playbooks."
+  },
+  {
+    "front": "Threat Intelligence",
+    "back": "Information about current/emerging threats, TTPs, IoCs; informs defense strategies."
+  },
+  {
+    "front": "Threat Hunting",
+    "back": "Proactively searching for signs of compromise/malicious activity in network."
+  },
+  {
+    "front": "Cyber Kill Chain",
+    "back": "Attack phases: Reconnaissance, Weaponization, Delivery, Exploitation, Installation, C2, Actions."
+  },
+  {
+    "front": "MITRE ATT&CK",
+    "back": "Framework documenting adversary tactics/techniques based on real-world observations."
+  },
+  {
+    "front": "Tactics vs. Techniques vs. Procedures (TTPs)",
+    "back": "Tactics: goals; Techniques: how-to; Procedures: specific implementation."
+  },
+  {
+    "front": "Security Training and Awareness",
+    "back": "Regular training on security policies, phishing, password hygiene, social engineering."
+  },
+  {
+    "front": "Acceptable Use Policy (AUP)",
+    "back": "Documents how users should use IT resources; defines prohibited activities."
+  },
+  {
+    "front": "Password Policy",
+    "back": "Requirements: minimum length, complexity, expiration, history, account lockout after failures."
+  },
+  {
+    "front": "Passwordless Authentication",
+    "back": "Uses biometrics, hardware keys, or other methods instead of passwords; more secure."
+  },
+  {
+    "front": "Biometric Authentication",
+    "back": "Fingerprint, facial recognition, iris scan; difficult to spoof; inherently non-transferable."
+  },
+  {
+    "front": "Blockchain",
+    "back": "Distributed ledger technology; immutable records; applications in supply chain, smart contracts."
+  },
+  {
+    "front": "Quantum Computing Threat",
+    "back": "Future quantum computers can break RSA/ECC encryption; industry preparing post-quantum cryptography."
+  },
+  {
+    "front": "Secure Coding Practices",
+    "back": "Input validation, output encoding, parameterized queries, error handling, least privilege."
+  },
+  {
+    "front": "OWASP Top 10",
+    "back": "Ten most critical web security risks: injection, broken auth, XSS, broken access, misconfiguration, etc."
+  },
+  {
+    "front": "Code Review",
+    "back": "Peer examination of source code to find bugs, security issues, and ensure quality standards."
+  },
+  {
+    "front": "Static Application Security Testing (SAST)",
+    "back": "Analyzes source code without running it; finds vulnerabilities early in development."
+  },
+  {
+    "front": "Dynamic Application Security Testing (DAST)",
+    "back": "Tests running application by sending malicious inputs; identifies runtime vulnerabilities."
+  },
+  {
+    "front": "Compliance vs. Security",
+    "back": "Compliance: meets regulatory requirements; Security: defends against threats. Both important."
+  },
+  {
+    "front": "Security Audit",
+    "back": "Independent review of security controls and practices against standards; documents findings."
+  },
+  {
+    "front": "Security Assessment",
+    "back": "Evaluation of security posture; identifies gaps and risks; informs improvement strategies."
+  },
+  {
+    "front": "Configuration Baseline",
+    "back": "Approved, documented standard configuration for systems; basis for compliance and detection."
+  },
+  {
+    "front": "Change Management",
+    "back": "Process for planning, testing, approving changes; minimizes disruption and unintended consequences."
+  },
+  {
+    "front": "Principle of Defense in Depth",
+    "back": "Multiple overlapping security layers; if one fails, others provide protection."
+  },
+  {
+    "front": "Security Metrics and KPIs",
+    "back": "Measurable indicators of security effectiveness: mean time to detect, patch rate, incident count."
+  },
+  {
+    "front": "Antivirus vs. Antimalware",
+    "back": "Antivirus: primarily targets viruses; Antimalware: broader, targets all malware types."
+  },
+  {
+    "front": "Signature-based Detection",
+    "back": "Identifies malware by matching known patterns/signatures; fast but misses new/unknown threats."
+  },
+  {
+    "front": "Heuristic Detection",
+    "back": "Identifies malware by analyzing behavior patterns; detects unknown threats but prone to false positives."
+  },
+  {
+    "front": "Sandboxing",
+    "back": "Isolated environment for testing suspicious files/code safely without endangering real system."
+  },
+  {
+    "front": "User Account Control (UAC)",
+    "back": "Windows feature prompting admin approval for privileged actions; prevents unauthorized system changes."
+  },
+  {
+    "front": "Group Policy",
+    "back": "Windows tool enforcing security policies across domain; controls settings on managed computers."
+  },
+  {
+    "front": "AppLocker",
+    "back": "Windows feature restricting app execution; allows only approved applications to run."
+  },
+  {
+    "front": "SELinux",
+    "back": "Linux security module enforcing mandatory access control; provides granular permission control."
+  },
+  {
+    "front": "Security Event Logging",
+    "back": "Recording system/security events for audit, investigation, and compliance purposes."
+  },
+  {
+    "front": "Log Retention",
+    "back": "How long logs must be kept; depends on compliance requirements (usually 1-7 years)."
+  },
+  {
+    "front": "Syslog",
+    "back": "Standard protocol for logging; forwards logs from devices to centralized logging server."
+  },
+  {
+    "front": "Wireshark",
+    "back": "Network packet analyzer; captures and examines network traffic; useful for troubleshooting/investigation."
+  },
+  {
+    "front": "Nmap",
+    "back": "Network mapper; discovers hosts/services/OS on network; used for reconnaissance and vulnerability assessment."
+  },
+  {
+    "front": "Metasploit",
+    "back": "Penetration testing framework; exploits vulnerabilities in systems; used by pentesters and attackers."
+  },
+  {
+    "front": "Nessus",
+    "back": "Vulnerability scanner; identifies missing patches, misconfigurations, compliance issues."
+  },
+  {
+    "front": "OpenVAS",
+    "back": "Open-source vulnerability scanner; similar to Nessus but free."
+  },
+  {
+    "front": "Aircrack-ng",
+    "back": "Wireless security auditing tools; cracks WPA/WEP encryption; assesses Wi-Fi security."
+  },
+  {
+    "front": "Hashcat",
+    "back": "Fast password cracking tool; tests password strength using GPU acceleration."
+  },
+  {
+    "front": "John the Ripper",
+    "back": "Password cracking tool; attempts to crack hashes using dictionary, brute force, or rainbow tables."
+  },
+  {
+    "front": "Burp Suite",
+    "back": "Web app security testing platform; intercepts/modifies HTTP traffic; finds web vulnerabilities."
+  },
+  {
+    "front": "OWASP ZAP",
+    "back": "Free web application security scanner; automated scanning and manual testing."
   }
 ]
