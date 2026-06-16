@@ -1,0 +1,699 @@
+[
+  {
+    "id": "fundamentals",
+    "title": "Security Fundamentals",
+    "emoji": "\ud83d\udee1\ufe0f",
+    "color": "#16a34a",
+    "requiredScore": 70,
+    "description": "Start with controls, CIA, AAA, Zero Trust, and physical/deception security.",
+    "lessons": [
+      {
+        "id": "controls",
+        "title": "Security Controls",
+        "xp": 20,
+        "minutes": 8,
+        "summary": "Security controls are grouped by implementation type and purpose. Technical controls use technology, managerial controls govern programs, operational controls support daily processes, and physical controls protect facilities. Control functions include preventive, deterrent, detective, corrective, compensating, and directive controls.",
+        "bullets": [
+          "Technical: firewalls, encryption, ACLs, antivirus.",
+          "Managerial: risk assessment, policy, awareness, IR planning.",
+          "Operational: monitoring, configuration management, training.",
+          "Physical: locks, guards, cameras, fencing.",
+          "Preventive stops incidents; detective identifies incidents; corrective restores operations."
+        ],
+        "quiz": [
+          {
+            "q": "Which control type identifies incidents after or during occurrence?",
+            "options": [
+              "Preventive",
+              "Detective",
+              "Directive",
+              "Compensating"
+            ],
+            "answerIndex": 1
+          },
+          {
+            "q": "Which is a technical control?",
+            "options": [
+              "Security policy",
+              "Firewall",
+              "Security guard",
+              "Risk register"
+            ],
+            "answerIndex": 1
+          }
+        ]
+      },
+      {
+        "id": "cia-aaa",
+        "title": "CIA, AAA & Non-repudiation",
+        "xp": 25,
+        "minutes": 9,
+        "summary": "The CIA triad protects information through confidentiality, integrity, and availability. AAA controls access through authentication, authorization, and accounting. Non-repudiation provides proof that an action occurred and cannot reasonably be denied.",
+        "bullets": [
+          "Confidentiality prevents unauthorized disclosure.",
+          "Integrity prevents unauthorized alteration.",
+          "Availability ensures systems/data are usable when needed.",
+          "Authentication verifies identity; authorization defines permissions; accounting logs activity.",
+          "Digital signatures and audit logs support non-repudiation."
+        ],
+        "quiz": [
+          {
+            "q": "Which CIA concept does hashing support most directly?",
+            "options": [
+              "Confidentiality",
+              "Integrity",
+              "Availability",
+              "Privacy"
+            ],
+            "answerIndex": 1
+          },
+          {
+            "q": "Which AAA function determines what a user may access?",
+            "options": [
+              "Authentication",
+              "Authorization",
+              "Accounting",
+              "Attestation"
+            ],
+            "answerIndex": 1
+          }
+        ]
+      },
+      {
+        "id": "zero-trust",
+        "title": "Zero Trust",
+        "xp": 25,
+        "minutes": 10,
+        "summary": "Zero Trust assumes no implicit trust. Every user, device, and request must be continuously verified and granted only the minimum access needed. It uses policy-based access, device health, MFA, segmentation, and monitoring.",
+        "bullets": [
+          "Never trust, always verify.",
+          "Use least privilege and just-in-time access.",
+          "Continuously evaluate context such as identity, device, location, and behavior.",
+          "Micro-segmentation limits lateral movement.",
+          "Policy enforcement points apply decisions close to resources."
+        ],
+        "quiz": [
+          {
+            "q": "What is the core Zero Trust idea?",
+            "options": [
+              "Trust internal networks",
+              "Never trust, always verify",
+              "Use only firewalls",
+              "Encrypt only at rest"
+            ],
+            "answerIndex": 1
+          },
+          {
+            "q": "Which access style best fits Zero Trust?",
+            "options": [
+              "Implicit access",
+              "Permanent admin rights",
+              "Least privilege",
+              "Shared accounts"
+            ],
+            "answerIndex": 2
+          }
+        ]
+      },
+      {
+        "id": "physical-deception",
+        "title": "Physical & Deception Security",
+        "xp": 20,
+        "minutes": 8,
+        "summary": "Physical controls protect buildings, systems, and people. Deception tools lure attackers away from real assets and collect intelligence about attacker methods.",
+        "bullets": [
+          "Bollards, fencing, lighting, cameras, guards, badges, and sensors protect physical spaces.",
+          "A honeypot is a decoy system.",
+          "A honeynet is a network of honeypots.",
+          "Honeyfiles and honeytokens detect unauthorized access or credential misuse."
+        ],
+        "quiz": [
+          {
+            "q": "What is the purpose of a honeypot?",
+            "options": [
+              "Encrypt files",
+              "Divert attackers and gather intelligence",
+              "Patch servers",
+              "Authenticate users"
+            ],
+            "answerIndex": 1
+          },
+          {
+            "q": "Which protects against vehicle ramming?",
+            "options": [
+              "Bollards",
+              "Honeytokens",
+              "SIEM",
+              "S/MIME"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "threats",
+    "title": "Threats & Vulnerabilities",
+    "emoji": "\ud83d\udc1b",
+    "color": "#dc2626",
+    "requiredScore": 75,
+    "description": "Learn attackers, social engineering, malware, vulnerabilities, and attack indicators.",
+    "lessons": [
+      {
+        "id": "actors-vectors",
+        "title": "Threat Actors & Vectors",
+        "xp": 25,
+        "minutes": 10,
+        "summary": "Threat actors differ in motivation, resources, sophistication, and whether they are internal or external. Common vectors include email, SMS, voice, files, removable media, vulnerable software, insecure networks, open ports, default credentials, and supply-chain providers.",
+        "bullets": [
+          "Nation-states are highly resourced and often perform espionage.",
+          "Organized crime usually seeks financial gain.",
+          "Insiders abuse legitimate access.",
+          "Phishing uses email; smishing uses SMS; vishing uses voice.",
+          "Supply-chain risk can come from MSPs, vendors, software, hardware, and service providers."
+        ],
+        "quiz": [
+          {
+            "q": "SMS phishing is called what?",
+            "options": [
+              "Vishing",
+              "Smishing",
+              "Whaling",
+              "BEC"
+            ],
+            "answerIndex": 1
+          },
+          {
+            "q": "Which actor is generally highly funded and sophisticated?",
+            "options": [
+              "Script kiddie",
+              "Nation-state",
+              "Shadow IT",
+              "Casual user"
+            ],
+            "answerIndex": 1
+          }
+        ]
+      },
+      {
+        "id": "malware-attacks",
+        "title": "Malware & Network Attacks",
+        "xp": 30,
+        "minutes": 12,
+        "summary": "Malware includes ransomware, trojans, worms, spyware, keyloggers, logic bombs, rootkits, and viruses. Network attacks include DDoS, DNS attacks, wireless attacks, on-path/MITM attacks, credential replay, and malicious code delivery.",
+        "bullets": [
+          "Ransomware encrypts or locks data for payment.",
+          "A worm self-replicates across networks.",
+          "A rootkit hides at privileged/kernel level.",
+          "DDoS overwhelms services with traffic.",
+          "DNS poisoning redirects users to malicious destinations."
+        ],
+        "quiz": [
+          {
+            "q": "Which malware encrypts files and demands payment?",
+            "options": [
+              "Spyware",
+              "Ransomware",
+              "Rootkit",
+              "Worm"
+            ],
+            "answerIndex": 1
+          },
+          {
+            "q": "Intercepting and modifying traffic between two parties is what?",
+            "options": [
+              "MITM/on-path",
+              "Brute force",
+              "Bluejacking",
+              "Dictionary attack"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      },
+      {
+        "id": "app-vulns",
+        "title": "Application Vulnerabilities",
+        "xp": 30,
+        "minutes": 12,
+        "summary": "Applications are commonly attacked through injection, XSS, buffer overflow, replay, privilege escalation, forgery, and directory traversal. Secure coding, input validation, output encoding, secure session handling, and patching reduce risk.",
+        "bullets": [
+          "SQL injection is mitigated with parameterized queries.",
+          "XSS injects malicious scripts into web pages.",
+          "Buffer overflow can allow arbitrary code execution.",
+          "Directory traversal manipulates paths to access restricted files.",
+          "Replay attacks are reduced with nonces, timestamps, and session protections."
+        ],
+        "quiz": [
+          {
+            "q": "Best defense against SQL injection?",
+            "options": [
+              "Parameterized queries",
+              "Password rotation",
+              "WEP",
+              "Root CA"
+            ],
+            "answerIndex": 0
+          },
+          {
+            "q": "Injected JavaScript in a web page is usually what?",
+            "options": [
+              "SQLi",
+              "XSS",
+              "DDoS",
+              "DNSSEC"
+            ],
+            "answerIndex": 1
+          }
+        ]
+      },
+      {
+        "id": "indicators",
+        "title": "Indicators of Malicious Activity",
+        "xp": 20,
+        "minutes": 8,
+        "summary": "Indicators help analysts detect attacks. Examples include account lockouts, impossible travel, unusual outbound traffic, resource spikes, missing logs, blocked content, unusual DNS changes, and repeated failed logins.",
+        "bullets": [
+          "Many failed logins may indicate brute force or password spraying.",
+          "Impossible travel suggests account compromise.",
+          "Outbound traffic to unknown IPs may indicate exfiltration or botnet behavior.",
+          "Missing logs may indicate tampering.",
+          "Resource consumption can suggest malware or DDoS."
+        ],
+        "quiz": [
+          {
+            "q": "Logins from distant countries within minutes indicate what?",
+            "options": [
+              "Impossible travel",
+              "DNS poisoning",
+              "Jailbreaking",
+              "Hash collision"
+            ],
+            "answerIndex": 0
+          },
+          {
+            "q": "Large outbound traffic to unfamiliar IPs may indicate what?",
+            "options": [
+              "Data exfiltration",
+              "Full disk encryption",
+              "Salting",
+              "Tokenization"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "architecture",
+    "title": "Architecture & Infrastructure",
+    "emoji": "\ud83c\udfd7\ufe0f",
+    "color": "#2563eb",
+    "requiredScore": 75,
+    "description": "Master network zones, cloud models, secure infrastructure, wireless, and data protection.",
+    "lessons": [
+      {
+        "id": "network-architecture",
+        "title": "Network Architecture",
+        "xp": 25,
+        "minutes": 10,
+        "summary": "Secure architecture uses segmentation, security zones, DMZs, firewalls, IDS/IPS, proxies, VPNs, remote access controls, and secure protocols. Placement of devices determines how well threats are detected, blocked, and contained.",
+        "bullets": [
+          "A DMZ hosts public services away from the internal network.",
+          "Segmentation limits malware spread and lateral movement.",
+          "IDS detects; IPS can block inline.",
+          "VPNs protect remote access with encrypted tunnels.",
+          "Fail-closed is usually safer than fail-open."
+        ],
+        "quiz": [
+          {
+            "q": "What is the primary purpose of a DMZ?",
+            "options": [
+              "Host public services isolated from internal network",
+              "Store backups",
+              "Replace TLS",
+              "Hash passwords"
+            ],
+            "answerIndex": 0
+          },
+          {
+            "q": "Which device blocks malicious traffic inline?",
+            "options": [
+              "IDS",
+              "IPS",
+              "Tap",
+              "Packet analyzer"
+            ],
+            "answerIndex": 1
+          }
+        ]
+      },
+      {
+        "id": "cloud-iot",
+        "title": "Cloud, IoT & Specialized Systems",
+        "xp": 25,
+        "minutes": 10,
+        "summary": "Cloud security follows shared responsibility. Hybrid, serverless, IaC, containers, microservices, IoT, ICS/SCADA, RTOS, and embedded systems require tailored controls, segmentation, least privilege, secure baselines, and monitoring.",
+        "bullets": [
+          "In IaaS, customers secure OS, apps, identity, and data.",
+          "IaC can automate secure builds but may also automate misconfigurations.",
+          "IoT devices should be segmented and managed.",
+          "ICS/SCADA prioritize safety and availability.",
+          "Containers require isolation and secure images."
+        ],
+        "quiz": [
+          {
+            "q": "Who secures customer data in most cloud shared-responsibility models?",
+            "options": [
+              "Only the provider",
+              "The customer",
+              "The ISP",
+              "The browser"
+            ],
+            "answerIndex": 1
+          },
+          {
+            "q": "Best mitigation for risky IoT devices?",
+            "options": [
+              "Network segmentation",
+              "Public IPs",
+              "Disable logs",
+              "Use WEP"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      },
+      {
+        "id": "data-protection",
+        "title": "Data Types, States & Protection",
+        "xp": 30,
+        "minutes": 12,
+        "summary": "Data protection depends on classification and state. Data may be public, private, confidential, restricted, regulated, critical, legal, financial, or intellectual property. It exists at rest, in transit, and in use, and can be protected through encryption, hashing, masking, tokenization, access control, and geographic restrictions.",
+        "bullets": [
+          "Encrypt data at rest and in transit.",
+          "Hashing helps prove integrity.",
+          "Tokenization replaces sensitive values with tokens.",
+          "Data sovereignty means data is subject to laws where it is stored.",
+          "RBAC, ABAC, and MAC enforce access differently."
+        ],
+        "quiz": [
+          {
+            "q": "Which method replaces sensitive values with placeholders?",
+            "options": [
+              "Tokenization",
+              "DDoS",
+              "ARP poisoning",
+              "Whaling"
+            ],
+            "answerIndex": 0
+          },
+          {
+            "q": "Data actively moving across a network is called what?",
+            "options": [
+              "At rest",
+              "In transit",
+              "Archived",
+              "Disposed"
+            ],
+            "answerIndex": 1
+          }
+        ]
+      },
+      {
+        "id": "resilience",
+        "title": "Resilience, HA & Recovery",
+        "xp": 25,
+        "minutes": 10,
+        "summary": "High availability and resilience keep systems operating during failures. Techniques include load balancing, clustering, backup strategies, replication, geographic dispersion, hot/warm/cold sites, power redundancy, and continuity planning.",
+        "bullets": [
+          "RTO is how quickly service must be restored.",
+          "RPO is how much data loss is acceptable.",
+          "Hot sites are ready fastest; cold sites are cheapest but slowest.",
+          "Full, incremental, and differential backups affect recovery time and storage.",
+          "UPS and generators support power continuity."
+        ],
+        "quiz": [
+          {
+            "q": "Which metric defines maximum acceptable data loss?",
+            "options": [
+              "RTO",
+              "RPO",
+              "MTBF",
+              "CVSS"
+            ],
+            "answerIndex": 1
+          },
+          {
+            "q": "Which recovery site is typically fastest to use?",
+            "options": [
+              "Cold",
+              "Warm",
+              "Hot",
+              "Offline"
+            ],
+            "answerIndex": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "operations",
+    "title": "Operations & Tools",
+    "emoji": "\ud83e\uddf0",
+    "color": "#7c3aed",
+    "requiredScore": 80,
+    "description": "Use tools and processes: vulnerability management, monitoring, alerting, hardening, change management.",
+    "lessons": [
+      {
+        "id": "vuln-management",
+        "title": "Vulnerability Management",
+        "xp": 30,
+        "minutes": 12,
+        "summary": "Vulnerability management identifies, prioritizes, remediates, validates, and reports weaknesses using scans, threat feeds, CVE/CVSS, penetration tests, audits, patching, exceptions, segmentation, and compensating controls.",
+        "bullets": [
+          "Nessus and Qualys are vulnerability scanners.",
+          "CVSS helps prioritize severity.",
+          "Validate remediation with rescans or audits.",
+          "Exceptions should be documented and risk accepted.",
+          "Patch management reduces known-exploit risk."
+        ],
+        "quiz": [
+          {
+            "q": "Which tool type identifies known vulnerabilities?",
+            "options": [
+              "Vulnerability scanner",
+              "Word processor",
+              "DLP only",
+              "Honeypot"
+            ],
+            "answerIndex": 0
+          },
+          {
+            "q": "What should you do after patch remediation?",
+            "options": [
+              "Validate with rescanning",
+              "Delete logs",
+              "Disable MFA",
+              "Ignore risk"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      },
+      {
+        "id": "monitoring-tools",
+        "title": "Monitoring & Security Tools",
+        "xp": 30,
+        "minutes": 12,
+        "summary": "Security operations use SIEM, SOAR, IDS/IPS, EDR, antivirus, DLP, SNMP traps, NetFlow, packet analyzers, vulnerability scanners, SCAP, baselines, and benchmarks to detect, respond, and report.",
+        "bullets": [
+          "SIEM correlates logs and alerts.",
+          "SOAR automates response playbooks.",
+          "Wireshark analyzes packets.",
+          "DLP prevents unauthorized sensitive-data transfer.",
+          "Benchmarks like CIS/STIG support secure baselines."
+        ],
+        "quiz": [
+          {
+            "q": "Which tool correlates logs across systems?",
+            "options": [
+              "SIEM",
+              "TPM",
+              "WPA3",
+              "S/MIME"
+            ],
+            "answerIndex": 0
+          },
+          {
+            "q": "Which tool analyzes packet-level traffic?",
+            "options": [
+              "Wireshark",
+              "Nessus",
+              "SOAR",
+              "DLP"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      },
+      {
+        "id": "hardening-change",
+        "title": "Hardening & Change Management",
+        "xp": 25,
+        "minutes": 10,
+        "summary": "Hardening reduces attack surface by removing unnecessary software, disabling unused ports/protocols, changing default passwords, installing endpoint protection, enforcing baselines, and applying configuration management. Change management controls risk through approval, ownership, testing, impact analysis, rollback, maintenance windows, and SOPs.",
+        "bullets": [
+          "Disable Telnet, FTP, SMBv1 when not needed.",
+          "Change default credentials immediately.",
+          "Use allow lists for approved apps.",
+          "Backout plans reduce failed-change impact.",
+          "Documentation and version control support accountability."
+        ],
+        "quiz": [
+          {
+            "q": "Removing unnecessary features to reduce attack surface is called what?",
+            "options": [
+              "Hardening",
+              "Phishing",
+              "Tokenization",
+              "Whaling"
+            ],
+            "answerIndex": 0
+          },
+          {
+            "q": "What lets you reverse a failed change?",
+            "options": [
+              "Backout plan",
+              "DDoS",
+              "OCSP",
+              "Open relay"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "governance",
+    "title": "Governance, Risk & Compliance",
+    "emoji": "\ud83d\udcdc",
+    "color": "#f59e0b",
+    "requiredScore": 80,
+    "description": "Finish with risk, BIA, third-party governance, compliance, audits, awareness, and policies.",
+    "lessons": [
+      {
+        "id": "risk-bia",
+        "title": "Risk Management & BIA",
+        "xp": 30,
+        "minutes": 12,
+        "summary": "Risk management identifies, assesses, analyzes, treats, monitors, and reports risks. Risk may be accepted, transferred, avoided, mitigated, or exempted by exception. BIA identifies critical functions and recovery goals such as RTO, RPO, MTTR, and MTBF.",
+        "bullets": [
+          "SLE = asset value \u00d7 exposure factor.",
+          "ALE = SLE \u00d7 ARO.",
+          "Risk register tracks risk, owner, likelihood, impact, treatment, and residual risk.",
+          "Risk appetite/tolerance defines acceptable risk.",
+          "BIA supports continuity and disaster recovery planning."
+        ],
+        "quiz": [
+          {
+            "q": "What does BIA identify?",
+            "options": [
+              "Critical business functions and impact of disruption",
+              "Only firewall rules",
+              "Only phishing emails",
+              "Only encryption keys"
+            ],
+            "answerIndex": 0
+          },
+          {
+            "q": "Which strategy uses insurance?",
+            "options": [
+              "Transfer",
+              "Avoid",
+              "Accept",
+              "Ignore"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      },
+      {
+        "id": "third-party-compliance",
+        "title": "Third-Party Risk & Compliance",
+        "xp": 25,
+        "minutes": 10,
+        "summary": "Third-party risk management includes due diligence, vendor assessments, questionnaires, right-to-audit clauses, SLAs, MOUs, SOWs, NDAs, monitoring, and supply-chain analysis. Compliance includes GDPR, HIPAA, PCI DSS, SOX, local laws, privacy rights, breach notification, and audit evidence.",
+        "bullets": [
+          "PCI DSS protects payment card data.",
+          "HIPAA protects healthcare information.",
+          "GDPR protects personal data in the EU context.",
+          "SOX focuses on public-company financial reporting accountability.",
+          "SLAs define service expectations and responsibilities."
+        ],
+        "quiz": [
+          {
+            "q": "Which framework protects payment card data?",
+            "options": [
+              "HIPAA",
+              "PCI DSS",
+              "SOX",
+              "WPA3"
+            ],
+            "answerIndex": 1
+          },
+          {
+            "q": "Which law focuses on public-company financial accountability?",
+            "options": [
+              "SOX",
+              "DNSSEC",
+              "S/MIME",
+              "NAC"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      },
+      {
+        "id": "awareness-audits",
+        "title": "Audits, Policies & Awareness",
+        "xp": 25,
+        "minutes": 10,
+        "summary": "Governance relies on policies, standards, guidelines, audits, assessments, penetration testing, training, reporting, and monitoring. Awareness programs teach phishing recognition, social engineering defense, password management, removable media handling, insider threat signs, and remote-work security.",
+        "bullets": [
+          "Policies define required behavior.",
+          "Standards define mandatory implementation details.",
+          "Guidelines are recommended practices.",
+          "Internal and external audits verify compliance.",
+          "Phishing simulations reinforce user awareness."
+        ],
+        "quiz": [
+          {
+            "q": "Which document defines required organizational behavior?",
+            "options": [
+              "Policy",
+              "Packet capture",
+              "Hash",
+              "Exploit"
+            ],
+            "answerIndex": 0
+          },
+          {
+            "q": "Which activity tests user phishing awareness?",
+            "options": [
+              "Phishing simulation",
+              "Disk formatting",
+              "DNS poisoning",
+              "ARP spoofing"
+            ],
+            "answerIndex": 0
+          }
+        ]
+      }
+    ]
+  }
+]
